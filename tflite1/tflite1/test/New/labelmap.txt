@@ -1,0 +1,6 @@
+knife
+pistol
+smartphone
+bag
+card
+billete
