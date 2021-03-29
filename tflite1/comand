@@ -1,0 +1,15 @@
+cd tflite1
+source tflite1-env/bin/activate
+
+python3 camera.py
+
+python3 classify_image.py \
+--model models/efficientnet-edgetpu-M_quant_edgetpu.tflite \
+--labels models/imagenet_labels.txt \
+--input images/gun1.jpg
+
+python3 TFLite_detection_webcam.py --modeldir=test --edgetpu
+
+python3 TFLite_detection_webcam.py --modeldir=Sample_TFLite_model --edgetpu
+
+python3 camera.py

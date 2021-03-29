@@ -1,0 +1,4 @@
+pistol
+smartphone
+bag
+package
